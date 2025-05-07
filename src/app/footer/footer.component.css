@@ -1,0 +1,179 @@
+.footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .footer .row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .footer .col-md-6 {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  .footer ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .footer ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
+  .footer ul li a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+  }
+  
+  .footer .footer-bottom {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  
+  .footer .footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+  }
+  
+  .footer .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .footer .col-md-6 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;  /* Align text to the left */
+  }
+  
+  .footer .col-md-6 ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer .col-md-6 ul li {
+    margin: 5px 0;
+  }
+  
+  .footer .col-md-6 ul li a {
+    text-decoration: none;
+    color: var(--text-color);  /* Or any color that suits your theme */
+  }
+  
+  .footer .col-md-6 ul li a:hover {
+    color: var(--primary-color);
+  }
+  
+  .footer .text-center {
+    padding: 10px 0;
+    text-align: center;
+  }
+  .green-footer {
+    background-color: var(--primary-color); /* Use the green color defined earlier */
+    padding: 1rem 0;
+    color: #fff; /* Ensures the text is white on the green background */
+  }
+
+  .footer-social {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .footer-social a {
+    color: var(--primary-color); /* your green color */
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social a:hover {
+    color: var(--secondary-color); /* your accent color */
+  }
+
+  .footer-social-wrapper {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+  }
+  
+  .footer-social a {
+    color: var(--primary-color);
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social a:hover {
+    color: var(--secondary-color);
+  }

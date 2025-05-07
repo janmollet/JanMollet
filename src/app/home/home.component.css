@@ -1,0 +1,8 @@
+img {
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    object-position: top center; /* try 'top center', 'left center', etc. */
+    border: 0.25rem solid #4CAF50;
+  }
