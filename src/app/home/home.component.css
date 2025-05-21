@@ -6,3 +6,34 @@ img {
     object-position: top center; /* try 'top center', 'left center', etc. */
     border: 0.25rem solid #4CAF50;
   }
+
+  /* Custom styles for the contact section */
+.contact-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.contact-list a {
+  color: black;
+  text-decoration: underline;
+}
+
+.contact-list i {
+  margin-right: 8px;
+  color: var(--primary-color)
+}
+.main-description {
+  line-height: 1.5;
+  text-align: justify; /* Justifies the text */
+  color: #333;
+  font-size: 1.1rem; /* Optional: gives text a darker, more readable color */
+}
+
+#a{
+  color: var(--primary-color);
+}

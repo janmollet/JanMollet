@@ -1,0 +1,125 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+<style>
+  /* UAB green border left */
+  .uab-card {
+    border-left: 5px solid #28a745;
+  }
+  /* Northeastern red border left */
+  .neu-card {
+    border-left: 5px solid #dc3545;
+  }
+  /* Green question headers for UAB projects */
+  .project-question.uab {
+    display: flex;
+    align-items: center;
+    background-color: #e9f5ea; /* subtle greenish bg */
+    border-radius: 0.5rem;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #2f6627; /* dark green */
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+  .project-question.uab .icon {
+    color: #28a745; /* UAB green */
+    font-size: 1.8rem;
+    margin-right: 0.8rem;
+  }
+  /* Red question headers for Northeastern projects */
+  .project-question.neu {
+    display: flex;
+    align-items: center;
+    background-color: #f8d7da; /* light red/pink bg */
+    border-radius: 0.5rem;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #a71d2a; /* darker red */
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+  .project-question.neu .icon {
+    color: #dc3545; /* Northeastern red */
+    font-size: 1.8rem;
+    margin-right: 0.8rem;
+  }
+</style>
+
+<div class="container py-5" id="projects-studies-section">
+  <h2 class="text-center mb-4 projects">Projects & Studies</h2>
+  <div class="row g-4">
+
+    <!-- UAB Project 1 -->
+    <div class="col-md-6">
+      <div class="project-question uab">
+        <i class="fas fa-question-circle icon"></i>
+        How do we address an aging population? Can technology help?
+      </div>
+      <div class="card shadow-sm uab-card" style="background-color: #dff0d8;">
+        <div class="card-body">
+          <h5 class="card-title">Home Health Care for the Elderly</h5>
+          <p class="card-text small fst-italic">Exploring sensor and biomedical tech for elderly in rural low-density environments.</p>
+          <a class="btn btn-success" href="assets/SANTA.pdf" download>
+            <i class="fas fa-file-download me-2"></i>Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- UAB Project 2 -->
+    <div class="col-md-6">
+      <div class="project-question uab">
+        <i class="fas fa-question-circle icon"></i>
+        Can blockchain help fight corruption and censorship?
+      </div>
+      <div class="card shadow-sm uab-card2" style="background-color: #dff0d8;">
+        <div class="card-body">
+          <h5 class="card-title">Vitrum: A Way to a Transparent Society</h5>
+          <p class="card-text small fst-italic">Blockchain-powered transparent database to fight corruption and censorship.</p>
+          <a class="btn btn-success" href="assets/VITRUM.pdf" download>
+            <i class="fas fa-file-download me-2"></i>Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Northeastern Project 1 -->
+    <div class="col-md-6">
+      <div class="project-question neu">
+        <i class="fas fa-question-circle icon"></i>
+       How can spatial analysis improve melanoma detection and prevention?
+      </div>
+      <div class="card shadow-sm neu-card" style="background-color: #f8d7da;">
+        <div class="card-body">
+          <h5 class="card-title">Melanoma Across Spain</h5>
+          <p class="card-text small fst-italic">Spatial analysis of melanoma incidence using R and ArcGIS.</p>
+          <a class="btn btn-danger" href="assets/Melanoma.pdf" download>
+            <i class="fas fa-file-download me-2"></i>Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Northeastern Project 2 -->
+    <div class="col-md-6">
+      <div class="project-question neu">
+        <i class="fas fa-question-circle icon"></i>
+        How can we optimize traffic flow and signal timing in urban areas?
+      </div>
+      <div class="card shadow-sm neu-card2" style="background-color: #f8d7da;">
+        <div class="card-body">
+          <h5 class="card-title">Roxbury Crossing Intersection Analysis</h5>
+          <p class="card-text small fst-italic">Traffic congestion & signal timing optimization study in Boston.</p>
+          <a class="btn btn-danger" href="assets/ROXBURY_CROSSING.pdf" download>
+            <i class="fas fa-file-download me-2"></i>Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,128 @@
+/* UAB green themed cards with subtle background */
+.uab-card {
+  position: relative;
+  color: #fff;
+  background: linear-gradient(
+      rgba(34, 139, 34, 0.7), /* green overlay */
+      rgba(34, 139, 34, 0.7)
+    ),
+    url('https://post.healthline.com/wp-content/uploads/2020/11/Elderly_WHeelchair_Rearview_1296x728-header-1296x729.jpg') no-repeat center center/cover;
+  transition: transform 0.3s ease;
+}
+.uab-card:hover {
+  transform: scale(1.03);
+}
+
+.projects{
+  color: var(--primary-color);
+  font-weight: 600
+}
+/* Northeastern red themed cards with subtle background */
+.neu-card {
+  position: relative;
+  color: #fff;
+  background: linear-gradient(
+      rgba(178, 34, 34, 0.7), /* firebrick red overlay */
+      rgba(178, 34, 34, 0.7)
+    ),
+    url('https://www.cdc.gov/covid/media/images/2024/11/GettyImages-1773970411_1200x675.png') no-repeat center center/cover;
+  transition: transform 0.3s ease;
+}
+.neu-card:hover {
+  transform: scale(1.03);
+}
+
+/* Make sure buttons stand out on colored backgrounds */
+.uab-card .btn-success,
+.neu-card .btn-danger {
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: Card body text shadows for readability */
+.uab-card .card-body p,
+.neu-card .card-body p,
+.uab-card .card-title,
+.neu-card .card-title {
+  text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+}
+
+.uab-card {
+  border-left: 5px solid #28a745; /* UAB green */
+}
+
+.neu-card {
+  border-left: 5px solid #dc3545; /* Northeastern red */
+}
+
+
+ /* OTHER TWO BUTTONS */
+ /* UAB green themed cards with subtle background */
+.uab-card2 {
+  position: relative;
+  color: #fff;
+  background: linear-gradient(
+      rgba(34, 139, 34, 0.7), /* green overlay */
+      rgba(34, 139, 34, 0.7)
+    ),
+    url('https://www.sirtbhopal.ac.in/assets/images/blogs/basics-of-blockchain-explained-in-easy-terms.webp') no-repeat center center/cover;
+  transition: transform 0.3s ease;
+}
+.uab-card2:hover {
+  transform: scale(1.03);
+}
+
+/* Northeastern red themed cards with subtle background */
+.neu-card2 {
+  position: relative;
+  color: #fff;
+  background: linear-gradient(
+      rgba(178, 34, 34, 0.7), /* firebrick red overlay */
+      rgba(178, 34, 34, 0.7)
+    ),
+    url('https://www.modeshift.com/wp-content/uploads/2023/11/Why-Is-Public-Transportation-Better-Than-Cars.jpg') no-repeat center center/cover;
+  transition: transform 0.3s ease;
+}
+.neu-card2:hover {
+  transform: scale(1.03);
+}
+
+/* Make sure buttons stand out on colored backgrounds */
+.uab-card2 .btn-success,
+.neu-card2 .btn-danger {
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: Card body text shadows for readability */
+.uab-card2 .card-body p,
+.neu-card2 .card-body p,
+.uab-card2 .card-title,
+.neu-card2 .card-title {
+  text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+}
+
+.uab-card2 {
+  border-left: 5px solid #28a745; /* UAB green */
+}
+
+.neu-card2 {
+  border-left: 5px solid #dc3545; /* Northeastern red */
+}
+
+/* Make all cards larger */
+.uab-card, .uab-card2, .neu-card, .neu-card2 {
+  min-height: 260px;
+  padding: 1.5rem;
+  font-size: 1.05rem;
+}
+
+/* Increase title font size for better emphasis */
+.card-title {
+  font-size: 1.4rem;
+}
+
+/* Optionally increase card body padding */
+.card-body {
+  padding: 1.5rem;
+}
