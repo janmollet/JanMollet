@@ -1,0 +1,82 @@
+
+.about-me__photo {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  border: 0.25rem solid #4CAF50;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  transform: scale(1.1);
+}
+
+#a{
+  color: var(--primary-color);
+}
+
+
+h1 {
+  font-size: 2rem; /* o el tamaño que prefieras */
+  margin: 1rem 0;  /* margen arriba y abajo */
+  font-weight: bold; /* si quieres reforzar el peso */
+}
+
+/* Contact section styles */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  margin-bottom: 0.625rem; /* 10px */
+  text-align: left;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.contact-list li i {
+  margin-right: 0.5rem;
+  color: var(--primary-color);
+  min-width: 1.2rem; /* mantiene espacio para iconos */
+}
+
+.contact-list a {
+  color: inherit; /* toma el color del padre */
+  text-decoration: underline;
+}
+
+.contact-list a:hover,
+.contact-list a:focus {
+  color: var(--primary-color);
+  text-decoration: none;
+  outline: none;
+}
+
+/* Main text description */
+.main-description {
+  line-height: 1.5;
+  text-align: justify;
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Link with id 'a' */
+#a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#a:hover,
+#a:focus {
+  color: darken(var(--primary-color), 10%);
+  text-decoration: none;
+  outline: none;
+}
