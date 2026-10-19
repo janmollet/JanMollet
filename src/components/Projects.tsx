@@ -1,58 +1,36 @@
+import melanomaImage from "../assets/melanoma.webp"
+import taxiImage from "../assets/taxi.webp"
+import intersectionImage from "../assets/intersection.webp"
+
 const projects = [
-  {
-    title: "Melanoma Across Spain",
-    question:
-      "How can spatial analysis improve melanoma detection and prevention?",
-    image: "/assets/virus.png",
-    description:
-      "Spatial analysis of melanoma incidence using R and ArcGIS.",
-    pdf: "/assets/Melanoma.pdf",
-  },
   {
     title: "Roxbury Crossing Intersection Analysis",
     question:
       "How can we optimize traffic flow and signal timing in urban areas?",
-    image: "/public.jpg",
+    image: intersectionImage,
     description:
       "Traffic congestion and signal timing optimization study in Boston.",
-    pdf: "/assets/ROXBURY_CROSSING.pdf",
+    pdf: "/JanMollet/projects/ROXBURY_CROSSING.pdf",
   },
-  {
-    title: "Vitals: Data-Driven Insights into Care and Recovery",
-    question:
-      "Can data analysis improve healthcare outcomes and addiction support?",
-    image: "/doctor.jpg",
-    description:
-      "Exploring healthcare quality and substance abuse treatment trends through data.",
-    pdf: "/assets/Collection1.pdf",
-  },
-  {
-    title: "ICU/SICU Intervention Insights",
-    question:
-      "How can SQL identify top hospitals for ICU and SICU intervention programs?",
-    image: "/hospital.jpg",
-    description:
-      "Analyzing ICU and SICU bed data to guide strategic hospital selection.",
-    pdf: "/assets/Collection2.pdf",
-  },
+  
   {
     title: "Predicting Taxi Driver Tips Using NYC Green Taxi Data",
     question:
       "How can we use NYC Green Taxi trip data and k-NN regression to predict taxi driver tip amounts?",
-    image: "/robot.jpg",
+    image: taxiImage,
     description:
       "Analyzing NYC Green Taxi data to predict driver tips using a k-NN regression model.",
-    pdf: "/assets/Collection3.pdf",
+    pdf: "/JanMollet/projects/Collecting3.pdf",
   },
   {
-    title: "Passenger Activity Forecasting",
+    title: "Melanoma Across Spain",
     question:
-      "Can we forecast March passengers using moving averages, exponential smoothing, and regression?",
-    image: "/forecasting.jpg",
+      "How can spatial analysis improve melanoma detection and prevention?",
+    image: melanomaImage,
     description:
-      "Using 2008–2018 data to predict 2019 and compare models with MSE and RMSE.",
-    pdf: "/assets/Collection4.pdf",
-  },
+      "Spatial analysis of melanoma incidence using R and ArcGIS.",
+    pdf: "/JanMollet/projects/Melanoma.pdf",
+  }
 ];
 
 function Projects() {
@@ -92,11 +70,10 @@ function Projects() {
 
                 <a
                   href={project.pdf}
-                  target="_blank"
-                  rel="noreferrer"
+                  download
                   className="project-link"
                 >
-                  View Project
+                  Download the PDF
                   <i className="bi bi-arrow-up-right"></i>
                 </a>
               </div>

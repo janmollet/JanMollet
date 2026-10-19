@@ -1,3 +1,4 @@
+import resumeJan from "../../public/JAN_MOLLET_RESUME_DEF.pdf"
 const education = [
   {
     institution: "Northeastern University",
@@ -180,9 +181,8 @@ function Resume() {
           </div>
 
           <a
-            href="/Jan_Mollet_Resume_UPS.pdf"
-            target="_blank"
-            rel="noreferrer"
+            href={resumeJan}
+            download
             className="download-button"
           >
             Download Resume
