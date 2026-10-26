@@ -116,11 +116,63 @@ main {
   margin: 0 0 18px;
   color: var(--navy);
   font-family: 'Space Grotesk', sans-serif;
-  font-size: clamp(2.3rem, 5vw, 3rem);
+  font-size: clamp(2.3rem, 3vw, 2rem);
   line-height: 1;
   letter-spacing: -0.04em;
 }
 
+.project-detail {
+  padding: 5rem 0 3rem;
+}
+
+.project-eyebrow {
+  color: var(--navy);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  opacity: 0.7;
+}
+
+.project-title {
+  color: var(--navy);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  max-width: 900px;
+  margin: 0;
+}
+
+.project-title span {
+  display: block;
+  color: #e7a04b;
+  font-weight: 500;
+}
+
+.project-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    var(--navy),
+    rgba(0, 43, 34, 0.08)
+  );
+  margin: 2rem 0;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .project-detail {
+    padding-top: 3rem;
+  }
+
+  .project-title {
+    letter-spacing: -0.8px;
+  }
+}
 .section-heading > p:last-child {
   margin: 0;
   color: var(--muted);
@@ -528,6 +580,67 @@ main {
 .project-content {
   padding: 30px;
 }
+
+
+.center-button {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 24px;
+}
+
+.project-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 13px 22px;
+  background-color: #002b22;
+  color: #ffffff;
+  border: 1px solid #002b22;
+  border-radius: 8px;
+
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.project-button i {
+  font-size: 1rem;
+  transition: transform 0.25s ease;
+}
+
+.project-button:hover {
+  background-color: #f4a340;
+  border-color: #f4a340;
+  color: #002b22;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 43, 34, 0.15);
+}
+
+.project-button:hover i {
+  transform: translate(3px, -3px);
+}
+
+.project-button:focus-visible {
+  outline: 3px solid #f4a340;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-button,
+  .project-button i {
+    transition: none;
+  }
+}
+
 
 .project-question {
   margin: 0 0 14px;

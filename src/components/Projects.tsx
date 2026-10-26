@@ -1,6 +1,7 @@
 import melanomaImage from "../assets/melanoma.webp"
 import taxiImage from "../assets/taxi.webp"
 import intersectionImage from "../assets/intersection.webp"
+import {Link } from 'react-router-dom';
 
 const projects = [
   {
@@ -11,6 +12,7 @@ const projects = [
     description:
       "Traffic congestion and signal timing optimization study in Boston.",
     pdf: "/JanMollet/projects/ROXBURY_CROSSING.pdf",
+    project_name: "intersection"
   },
   
   {
@@ -21,6 +23,7 @@ const projects = [
     description:
       "Analyzing NYC Green Taxi data to predict driver tips using a k-NN regression model.",
     pdf: "/JanMollet/projects/Collecting3.pdf",
+    project_name: "taxi"
   },
   {
     title: "Melanoma Across Spain",
@@ -30,6 +33,7 @@ const projects = [
     description:
       "Spatial analysis of melanoma incidence using R and ArcGIS.",
     pdf: "/JanMollet/projects/Melanoma.pdf",
+    project_name: "melanoma"
   }
 ];
 
@@ -66,16 +70,20 @@ function Projects() {
 
                 <h3>{project.title}</h3>
 
-                <p>{project.description}</p>
+                <p>{project.description}</p> 
 
-                <a
-                  href={project.pdf}
-                  download
-                  className="project-link"
-                >
-                  Download the PDF
-                  <i className="bi bi-arrow-up-right"></i>
-                </a>
+              
+                <div className="center-button">
+                  <Link
+                    to={`/projects/${project.project_name}`}
+                    className="project-button"
+                  >
+                    <span>PROJECT OVERVIEW</span>
+                    <i className="bi bi-arrow-up-right"></i>
+                  </Link>
+                </div>
+
+                
               </div>
 
             </article>
