@@ -54,7 +54,7 @@ function About() {
               </a>
 
               <a
-                href="https://github.com/janmollet"
+                href="https://github.com/janmollet?tab=repositories"
                 target="_blank"
                 rel="noreferrer"
               >
